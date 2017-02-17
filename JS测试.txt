@@ -1,0 +1,42 @@
+选择题  8*
+    1.D  2.CD  3.B   4.C  5.C  6.C  7.AD   8.ACE
+填空题  13  27
+    9. _22_  10. _0_  11. _10__true__false_ 12._8_ 13._[name:"李四"]_ 14._0_
+15._123467_  16(10)._页面结束加载后触发_；（表单）元素失去焦点时触发；__（表单）元素获得焦点时触发；
+（表单）元素值被改变时触发；_（表单）在元素中文本被选中后触发；_当鼠标指针移到元素上时触发；
+当鼠标指针移动到元素上时触发_；当元素上按下鼠标按钮时触发_；当浏览器窗口被调整大小时触发；
+当元素滚动条被滚动时触发 17._4 14 10_  18._10underfined_  _NaN_ 19._7_  20.I,am,a,good,student
+21.am
+
+问答题5
+22.
+var c=0;
+function foo()
+{
+alert(c++);
+}
+setInterval("foo()","1000");
+
+23.var reg=/^\d{6}$/
+
+24.
+alert("返回"); 
+window.history.back(-1); 
+
+window.navigate(""); 
+25.
+document.getElementById  根据元素ID查找元素
+
+document.getElementByName 根据元素name查找元素
+document.getElementByTagName 根据指定的元素名查找元素
+self.location=''; 
+
+alert("非法访问！"); 
+top.location=''; 
+
+window.location.href="jb51.jsp?backurl="+window.location.href; 
+
+25.
+history.back();//返回上一页，相当于浏览器上后退功能。
+histoty.go(int);//去到指定的浏览历史记录页面。int是正的时候，就是向前int个历史记录，
+如果没有那么多，就没有行为。int是负数的时候那么就会向后

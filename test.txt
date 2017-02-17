@@ -1,0 +1,141 @@
+单选
+	1.	a = "0";以下返回选项不成立的是 D
+		A.	a === window["a"]
+		B.	a == (a ? 0 : "0")
+		C.	a + a !== 0
+		D.	a - a != "0"
+
+	2.	!0+-+!+-+0;的结果为 B
+		A.	-1
+		B.	0
+		C.	1
+		D.	2
+
+	3.	!0+-+!+-+1;的结果为 C
+		A.	-1
+		B.	0
+		C.	1
+		D.	2
+
+	4.	typeof Array;的结果为 A
+		A.	"function"
+		B.	"object"
+		C.	"array"
+		D.	"Array"
+
+	5.	typeof [];的结果为 B
+		A.	"function"
+		B.	"object"
+		C.	"array"
+		D.	"Array"
+
+	6.	$("document")[0].querySelector("div").innerHTML = 233;以下哪种形容是正确的 D
+		A.	页面中第一个div新增文字233
+		B.	页面中第一个div内所有标签替换为文字233
+		C.	页面中所有div内所有标签替换为文字233
+		D.	控制台报错
+
+	7.	如何清空div标签内的所有子元素	 C
+		A.	$("div").remove();
+		B.	$("div").removeAll();
+		C.	$("div").empty();
+		D.	$("div").emptyAll();
+
+	8.	如何为一个div执行validate插件 B
+		A.	$("div").fn.extend("validate");
+		B.	$("div").validate();
+		C.	$.fn.extend({validate : function(){}});
+		D.	$.extend({validate : function(){}});
+
+	9.	stylus文件中，有a，b，c标签的选择器，a是b的父级，b是c的父级。a标签拥有font-size 20px的样式，b标签拥有font-size 30px的样式，c标签使用font-size @font-size-1获取已有的font-size样式并希望再减去1像素的字体大小，执行编译后 C
+		A.	c标签的font-size为19px
+		B.	c标签的font-size为29px
+		C.	c标签的font-size为空
+		D.	命令行报错
+
+	10.	var a = function b(){return b();};b();的结果是 A
+		A.	Uncaught ReferenceError : b is not defined
+		B.	Uncaught RangeError : Maximum call stack size exceeded
+		C.	function b(){return b();}
+		D.	function(){return b();}
+
+	11.	var a = {a : 1, b : {a : 1, b : 2}}; var b = a; b.a = a.b; b.b = a.a; a的值为 D
+		A.	{a : 1, b : 1}
+		B.	{a : 1, b : {a : 1, b : 2}}
+		C.	{a : {a : 1}, b : 1}
+		D.	{a : {a : 1, b : 2}, b : {a : 1, b : 2}}
+
+	12.	var a = 1; function a(){this.a = a;return a;}; var b = new a(); b的值为 A
+		A.	Uncaught TypeError: a is not a constructor
+		B.	1
+		C.	{a : function{this.a = a; return a;}}
+		D.	function a(){this.a = a; return a;}
+
+	13.	var a = 0; function b(){a = 1; var a = 2; a = 3;}; b(); 最外层的a值为 A
+		A.	0
+		B.	1
+		C.	2
+		D.	3
+
+	14. var a = 0; function b(){a = 1; a = 2; a = 3;}; b(); 最外层的a值为 D
+		A.	0
+		B.	1
+		C.	2
+		D.	3
+
+	15.	var a = 0; (function(a){a++;return a;})(++a); 最外层的a值为 B
+		A.	0
+		B.	1
+		C.	2
+		D.	3
+
+多选
+	1.	form表单需要哪些属性才能使用post方法同步提交表单 B C
+		A.	action
+		B.	method
+		C.	name
+		D.	url
+
+	2.	哪些方法能为拥有font-size:14px;样式的p标签增加line-height:20px;样式 A C
+		A.	$("p").css("line-height", "20px");
+		B.	$("p").css(lineHeight, "20px");
+		C. 	$("p").css({lineHeight : "20px"});
+		D.	$("p").attr("style", "line-height:20px");
+
+	3.	给所有a标签加点击监听事件有哪些方式 A C D
+		A.	$("a").click(function(){});
+		B.	$("a")[0].onclick = function(){};
+		C.	$("a").on("click", function(){});
+		D.	$("a").bind("click", function(){});
+
+	4.	stylus文件在a文件夹下的b文件夹，当前命令行路径是在b文件中，希望监听stylus文件的改动编译并输出到a文件夹下，如何使用一行命令完成此操作 A D
+		A.	stylus -w ./ -o ../
+		B.	stylus -w ../b -o ./
+		C.	stylus -w ../b -O ../
+		D.	stylus -w ../../a/b -o ../
+
+	5.	以下标签中，书写方式没有正确且规范的有 A B C
+		A.	<meta charset="utf-8">
+		A.	<link rel="stylesheet" href="test.js" />
+		C.	<input type="pwd" />
+		D.	<img src="1.gif" />
+
+	6.	在IE7中，以下什么效果无法只用css样式实现 B C D
+		A.	非文本的标签水平垂直居中
+		B.	标签的鼠标点击变色
+		C.	一个标签实现圆角
+		D.	超出文本省略
+
+	7.	哪些情况会使页面发生跳转	A B D
+		A.	点击href属性为空的a标签
+		B.	点击type属性为submit的input标签
+		C.	点击type属性为button的input标签
+		D.	点击button标签
+	8.	
+
+
+填空
+
+	1.	
+
+	2.	

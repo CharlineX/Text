@@ -1,0 +1,120 @@
+<script>
+	//有一个商店Shop，名字叫做全家，有资产，没卖出商品之前为0
+	//商店中有3个营业员Assistant，每个营业员有自己的名字和年龄
+	//商店中有很多的商品Product（水2元，共20瓶；面包5元，共5个，巧克力10元，共8个；泡面4元，共15包；牛奶3元，共12个），每个商品有它的标签、总数、价格
+	//你是个消费者Consumer，你有具体数目的钱（50-100元之间随机），你想要在商店里买东西
+	//你可以想营业员询问，商店里是否有某件商品，营业员会告诉你是否有，如果有则告诉你价格，如果没有则告诉你没有这个商品
+	//你可以选择是否购买这个商品，如果要购买，则你会付钱，你自己的钱的数目会根据商品的价格减少，营业员收钱后商店会增加资产
+</script>
+<script>
+	//人类
+	function People(option){
+		this.name = option.name;
+		this.age = option.age;
+	}
+	//商店类
+	function Shop(option){
+		this.name = option.name;
+		this.money = option.money;
+		var assistant = option.assistant,
+			assistantLen = assistant.length,
+			product = option.product,
+			productLen = product.length;
+		this.assistants = function(){
+			var a = 0,
+				result = [];
+			while(a < assistantLen){
+				result[a] = new Assistant(assistant[a++], this);
+			}
+			return result;
+		}.call(this);
+		this.products = function(){
+			var a = 0,
+				result = [];
+			while(a < productLen){
+				result[a] = new Product(product[a++]);
+			}
+			return result;
+		}();
+		this.welcome = function(){
+			var currentAssistant = this.assistants[parseInt(Math.random() * assistantLen)];
+			currentAssistant.search(prompt("欢迎光临" + this.name + "商店，" + currentAssistant.age + "岁的营业员" + currentAssistant.name + "为您服务！" + currentAssistant.describe()));
+		};
+		this.welcome();
+	}
+	//店员类
+	function Assistant(option, shop){
+		People.call(this, option);
+		this.describe = function(){
+			var a = 0,
+				product = shop.products,
+				productLen = product.length,
+				result = "";
+			while(a < productLen){
+				result += "、" + product[a++].label;
+			}
+			return "我们这里有" + result.slice(1) + "。" + this.ask();
+		};
+		this.ask = function(){
+			return "您想要购买什么？";
+		};
+		this.search = function(label){
+			console.log(label);
+		};
+	}
+	//消费者类
+	function Consumer(){
+		People.call(this);
+	}
+	//商品类
+	function Product(option){
+		this.label = option.label;
+		this.sum = option.sum;
+		this.price = option.price;
+	}
+	new Shop({
+		name : "全家",
+		money : 0,
+		assistant : [
+			{
+				name : "小赵",
+				age : 24
+			},
+			{
+				name : "小钱",
+				age : 12
+			},
+			{
+				name : "小孙",
+				age : 36
+			}
+		],
+		product : [
+			{
+				label : "水",
+				sum : 20,
+				price : 2
+			},
+			{
+				label : "面包",
+				sum : 5,
+				price : 5
+			},
+			{
+				label : "巧克力",
+				sum : 8,
+				price : 10
+			},
+			{
+				label : "泡面",
+				sum : 15,
+				price : 4
+			},
+			{
+				label : "牛奶",
+				sum : 12,
+				price : 3
+			}
+		]
+	});
+</script>

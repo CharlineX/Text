@@ -1,0 +1,137 @@
+﻿一、选择题
+1.HTML的注释标记是以下哪个选项？C
+	A.//注释内容
+	B./* 注释内容 */
+	C.<!-- 注释内容 -->
+	D.《注释内容》
+2.以下关于盒子模型描述正确的是 A
+	A.标准盒子模型中：盒子的总宽度 ＝ 左右margin + 左右border + 左右padding + width
+	B.IE盒子模型中：盒子总宽度 ＝ 左右margin + 左右border + width
+	C.标准盒子模型中：盒子的总宽度 ＝ 左右margin + 左右border + width
+	D.IE盒子模型中：盒子总宽度 ＝ width
+3.meta标签可以出现在 () 中 A
+	A.<head>
+	B.<body>
+	C.<title>
+	D.<link>
+4.在HTML内部定义样式用下列哪个标签 A
+	A.<style>
+	B.<css>
+	C.<script>
+	D.<link>
+5.CSS中盒子模型的属性包括 BCE
+	A.font
+	B.margin
+	C.padding
+	D.visibility
+	E.border
+6.meta元素的作用是什么	B
+	A.meta元素用于表达HTML文档的格式
+	B.meta元素用于指定关于HTML文档的信息
+	C.meta元素用于实现本页的自动刷新
+	D.以上都不对
+7.下面哪些对象能对其设置超链接的是 ABC（多项选择题）
+	A.任何文字
+	B.图像
+	C.图像的一部分
+	D.超链接标签
+8.下列选项中，不属于文本属性的是 D
+	A.font-style
+	B.font-size
+	C.text-align
+	D.font-color
+9.a:hover表示超链接文字在( )时的状态 C
+	A.鼠标按下
+	B.鼠标经过
+	C.鼠标放上去
+	D.访问过后
+10.选出你认为最语义化的定义标题的方法( ) C 
+	A.<span class="heading">文章标题</span> 
+	B.<p><b>文章标题</b></p>
+	C.<h1>文章标题</h1>
+	D.<strong>文章标题</strong>
+11.下面有关CSS sprites说法错误的是？C
+	A.允许你将一个页面涉及到的所有零星图片都包含到一张大图中去
+	B.利用CSS的“background-image”，“background-repeat”，“background-position”的组合进行背景定位
+	C.需要完成了整个网站之后再来拼接图片到一个Sprite中
+	D.CSS Sprites整理起来更为方便，同一个按钮不同状态的图片也不需要一个个切割出来并个别命名
+12.下面哪个属性不会让 div 脱离文档流（normal flow）？C
+	A.position: absolute;
+	B.position: fixed;
+	C.position: relative;
+	D.float: left;
+13.英文字母全部转为大写正确的是()C
+	A.text-transform: capitalize;
+	B.text-transform: lowercase;
+	C.text-transform: uppercase;
+	D.font-weight: bold;
+14.要定义css3动画的具体运作方式，你需要运用什么规则？B
+	A.animation
+	B.keyframes
+	C.flash
+	D.transition
+15.CSS3新支持下列哪一个属性 ? A
+	A.box-shadow
+	B.border
+	C.background
+	D.display
+16.下面有关html的描述，不推荐的是？B
+	A.在页面顶部添加 doctype声明；
+	B.在 </head> 与 <body> 中间插入 HTML 代码；
+	C.避免使用 <font> 标签；
+	D.使用 <table> 元素展现学生成绩表等数据。
+17.display:none 和 visibility:hidden的说法，正确的是？AB（多项选择题）
+	A.display:none与visibility:hidden都可以用来隐藏某个元素
+	B.display:none在隐藏元素的时候，将其占位空间也去掉；而visibility:hidden只是隐藏了内容而已，其占位空间仍然保留。
+	C.display:none是不符合html5标准的
+	D.visibility:hidden是不符合html5标准的
+18.请选出正确的选项 ABCD （多项选择题）
+	A.属性要在开始标签中指定，用来表示该标签的性质和特性
+	B.通常都是以  属性名="值"  的形式来表示
+	C.一个标签可以指定多个属性
+	D.指定多个属性时不用区分顺序
+19.一个div宽度发生了改变，做一个延迟2秒，持续时间1s的匀速过渡动画，正确写法是：A
+    A.transition:width 1s linear 2s
+    B.transition:2s 1s linear width 
+    C.transition:1s 2s ease width
+    D.transition:width 1s ease 2s
+20.给一个div同时设置背景色红色和一个不重复的背景图标，并让该背景图标靠左垂直居中对齐，写法正确的是：CD（多项选择题）
+    A. background-color:red;background: url(icon.png) no-repeat left center; 
+    B. background: url(icon.png) no-repeat center left red 
+    C. background: url(icon.png) no-repeat left center red 
+    D. background: url(icon.png) no-repeat left center; background-color:red;
+ 
+
+
+
+二、填空题
+	1.有哪些块级标签_________________________________(举5个，同一类型算一个)有哪些行级标签____________________________________(举5个)
+	2.CSS外联样式表中定义优先级顺序是_________________________________________(至少使用3个进行对比);
+	CSS选择器包括_____________、_____________、___________等;
+	3.合理的页面布局中常听过结构与表现分离，那么结构是________,表现是_______
+	4.RGB三原色的组成是哪三种颜色____________________________
+	5.将以下代码border-width:1px;border-style:solid;border-color:#ff5500;简化为一个样式________________________________
+	6.在样式规则前使用哪种hack可以针对IE7处理双倍边距等的BUG___________________________
+	7.什么时候需要清浮动_________________________________________
+	8.清浮动代码是_________________________________________________________
+	9.CSS引入的方式有哪些_______________________________________________________________________
+    10.给整个div元素进行半透明样式是___________________给该div背景色填充黑色，并且背景色半透明的CSS3样式是_______________________________________________
+    11.给绝对定位元素设置一个父级的样式是___________________或者___________________
+    12.让一个固定宽度的div水平居中样式是___________________，让该div里面文字和图片居中的样式是___________________
+    13.写出5个HTML5里采用的语义化标签___________________，___________________，___________________，___________________，___________________，
+    14.语义化标签的优势是___________________和___________________
+    15.<!DOCTYPE>不写会有什么影响___________________（回答有或者没有）
+    16.display是一个重要属性，___________________是将元素显示为块级元素，___________________是将元素显示为内联元素，
+    __________________是将元素显示为内联块级元素，___________________是将元素显示为表格单元格
+
+    17.去掉UL li前面圆点的样式是  ___________________
+    18.多个元素用了position后，为了调整其层级，我们用 ___________________属性
+    19.选取一个type="text"的input，用属性选择器写法是___________________，选取一个type="text"，value="登录"的input用属性选择器写法是___________________
+    20.a标签里文字未被访问链接属性是___________________，已被访问的链接属性是___________________，鼠标移上去属性是___________________
+    21.#aa{background:red} .bb{background:blue}, <div id="aa" class="bb"></div>该div最终显示的背景颜色是___________________
+    22.CSS3里当div宽高相等时候，border-radius:___________________的时候，该div正圆显示
+
+
+ 
+
+
